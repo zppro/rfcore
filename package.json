@@ -1,0 +1,29 @@
+{
+  "name": "rfcore",
+  "version": "0.0.1",
+  "description": "restful core lib",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zppro/rfcore"
+  },
+  "keywords": [
+    "core",
+    "lib",
+    "for",
+    "restful"
+  ],
+  "author": "zppro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zppro/rfcore/issues"
+  },
+  "homepage": "https://github.com/zppro/rfcore",
+  "devDependencies": {
+    "mocha": "^2.2.4",
+    "should": "^6.0.1"
+  }
+}
