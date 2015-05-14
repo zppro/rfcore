@@ -4,7 +4,7 @@
   "description": "restful core lib",
   "main": "index.js",
   "scripts": {
-    "test": "test.js"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -25,5 +25,6 @@
   "devDependencies": {
     "mocha": "^2.2.4",
     "should": "^6.0.1"
-  }
+  },
+  "readmeFilename": "README.md"
 }

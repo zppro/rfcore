@@ -37,5 +37,6 @@
   "expr": true,
   "multistr": true,
   "onevar": false,
-  "unused": "vars"
+  "unused": "vars",
+  "esnext":true
 }
