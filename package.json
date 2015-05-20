@@ -1,6 +1,6 @@
 {
   "name": "rfcore",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "restful core lib",
   "main": "index.js",
   "scripts": {
