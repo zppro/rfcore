@@ -5,6 +5,7 @@ var core = {};
 
 core.config = require('./lib/config');
 core.util = require('./lib/util');
-core.data = require('./lib/data');
+core.dataT = require('./lib/dataT');
+core.dataP = require('./lib/dataP');
 
 module.exports = core;
