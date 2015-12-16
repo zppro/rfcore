@@ -72,4 +72,18 @@ describe("test dictionary", function() {
         d.pairs["t7"]["k2"].should.eql("v2");
     });
 
+
+    var path = './test/dicionary.json';
+    d.writeJSON(path, function () {
+
+
+        it("The d.pairs['t7'] should equal {k1:v1,k2:v2}", function(done) {
+            d.readJSON(path,function(){
+                d.pairs["t7"]["k1"].should.eql("v1");
+                d.pairs["t7"]["k2"].should.eql("v2");
+                done();
+            });
+        });
+    });
+
 });

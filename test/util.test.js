@@ -19,12 +19,48 @@ describe("test util.setProperty", function() {
     });
 
     it("The testObj.aa1 should equal level2", function() {
-        util.setProperty(testObj,k2,v2);
+        util.setPropertyRecursion(testObj,k2,v2);
         testObj.a.aa1.should.eql(v2);
     });
 
     it("The testObj.aaa1 should equal level3", function() {
-        util.setProperty(testObj,k3,v3);
+        util.setPropertyRecursion(testObj,k3,v3);
         testObj.a.aa.aaa1.should.eql(v3);
+    });
+
+
+});
+
+describe("string.format|string.f", function() {
+    it("The 'mongodb://{0}:{1}@{2}/{3}'.f('myuser','mypwd','myserver','mydatabase') should equal 'mongodb://myuser:mypassword@myserver/mydatabase' ", function() {
+        'mongodb://{0}:{1}@{2}/{3}'.f('myuser','mypwd','myserver','mydatabase').should.eql('mongodb://myuser:mypwd@myserver/mydatabase');
+    });
+});
+
+describe("string.md5", function() {
+    it("The '123'.md5 should equal '202cb962ac59075b964b07152d234b70' ", function() {
+        '123'.md5().should.eql('202cb962ac59075b964b07152d234b70');
+    });
+});
+
+describe("date.ts", function() {
+    it("The new date().ts should equal new date(ts)' ", function() {
+
+        var dn = new Date();
+        var ts = dn.ts();
+        var d = new Date(ts);
+        dn.should.eql(d);
+    });
+});
+
+describe("date.tz", function() {
+    it("The new date().tz should equal new date(ts)' ", function() {
+        new Date().tz().should.eql(-8);
+    });
+});
+
+describe("date.f", function() {
+    it("The new date().f('yyyy-MM-dd') should equal '2015-12-16'' ", function() {
+        new Date().f('yyyy').should.eql(new Date().getFullYear().toString());
     });
 });

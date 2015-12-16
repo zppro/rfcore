@@ -1,6 +1,6 @@
 {
   "name": "rfcore",
-  "version": "0.0.15",
+  "version": "0.0.21",
   "description": "restful core lib",
   "main": "index.js",
   "scripts": {
@@ -28,8 +28,8 @@
   },
   "readmeFilename": "README.md",
   "dependencies": {
+    "crypto": "0.0.3",
     "fs-extra": "^0.18.3",
-    "koa-body": "^1.2.1",
     "thenjs": "^1.5.0",
     "underscore": "^1.8.3"
   }
