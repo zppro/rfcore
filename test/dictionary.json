@@ -1,0 +1,47 @@
+{
+  "D1000": {
+    "name": "用户类型",
+    "items": [
+      {
+        "k": "A0001",
+        "v": {
+          "name": "Admin",
+          "order": 1
+        }
+      },
+      {
+        "k": "A0002",
+        "v": {
+          "name": "Normal",
+          "order": 2
+        }
+      }
+    ]
+  },
+  "D1001": {
+    "name": "子系统",
+    "items": [
+      {
+        "k": "A0001",
+        "v": {
+          "name": "Organization-PFTA-Standard",
+          "order": 1
+        }
+      },
+      {
+        "k": "A0002",
+        "v": {
+          "name": "Community-PFTA-Standard",
+          "order": 2
+        }
+      },
+      {
+        "k": "A0003",
+        "v": {
+          "name": "Manage-Center",
+          "order": 3
+        }
+      }
+    ]
+  }
+}
