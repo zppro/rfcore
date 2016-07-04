@@ -64,3 +64,35 @@ describe("date.f", function() {
         new Date().f('yyyy').should.eql(new Date().getFullYear().toString());
     });
 });
+
+describe("random", function() {
+    it("The randomN(6) should different randomN(6)  ", function() {
+        var r1 = util.randomN(6);
+        var r2 = util.randomN(6);
+        console.log(r1);
+        console.log(r2);
+        console.log(Math.random());
+        r1.toString().length.should.be.eql(6);
+        r2.toString().length.should.be.eql(6);
+        r1.should.not.be.eql(r2);
+    });
+});
+
+describe("paddingStr", function() {
+    it("The paddingStr('88','0',0) should be '000088'  ", function () {
+        util.paddingStr('88', '0', 4).should.eql('000088');
+        util.paddingStr('88', '0', 0).should.eql('88');
+    });
+});
+
+
+describe("readDictionaryStructure", function() {
+    it("begin readDictionaryStructure  ", function(done) {
+        var p = util.readDictionaryStructure('/home/zppro/github/fsrok/src/models/');
+        p.then(function(ret) {
+            console.dir(ret);
+            '1'.should.eql('1');
+            done();
+        });
+    });
+});
