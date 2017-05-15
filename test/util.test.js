@@ -86,9 +86,20 @@ describe("paddingStr", function() {
 });
 
 
-describe("readDictionaryStructure", function() {
-    it("begin readDictionaryStructure  ", function(done) {
-        var p = util.readDictionaryStructure('/home/zppro/github/fsrok/src/models/');
+describe("readDirectoryStructure", function() {
+    it("begin readDirectoryStructure  ", function(done) {
+        var p = util.readDirectoryStructure('/home/zppro/github/4gtour/src/models/dwh');
+        p.then(function(ret) {
+            console.dir(ret);
+            '1'.should.eql('1');
+            done();
+        });
+    });
+});
+
+describe("readDirectoryStructure", function() {
+    it("begin readDirectoryStructure  ", function(done) {
+        var p = util.readDirectoryStructure('/home/zppro/github/4gtour/src/models', '.js', {format: 'tree'});
         p.then(function(ret) {
             console.dir(ret);
             '1'.should.eql('1');
