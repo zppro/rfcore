@@ -107,3 +107,22 @@ describe("readDirectoryStructure", function() {
         });
     });
 });
+
+
+describe("isPhone, isIDNo, sexFromIDNo,birthdayFromIDNo", function() {
+    it("isPhone('13958009802') should be ok  ", function () {
+        util.isPhone('13958009802').should.be.ok;
+    });
+
+    it("isIDNo('330104191612181028') should be ok  ", function () {
+        util.isIDNo('330104191612181028').should.be.ok;
+    });
+
+    it("sexFromIDNo('330104191612181028') should be female ", function () {
+        util.sexFromIDNo('330104191612181028').should.eql('F');
+    });
+
+    it("birthdayFromIDNo('330104191612181028') should be 1916-12-18 ", function () {
+        util.birthdayFromIDNo('330104191612181028').should.eql('1916-12-18');
+    });
+});

@@ -1,6 +1,6 @@
 {
   "name": "rfcore",
-  "version": "0.1.18",
+  "version": "0.1.19",
   "description": "restful core lib",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/zppro/rfcore",
   "devDependencies": {
-    "mocha": "^2.2.4",
+    "mocha": "^2.5.3",
     "should": "^6.0.1"
   },
   "readmeFilename": "README.md",
